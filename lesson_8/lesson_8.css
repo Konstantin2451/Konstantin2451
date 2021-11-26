@@ -1,0 +1,55 @@
+.media div{
+	margin-bottom: 200px;
+	display: flex;
+	text-transform: uppercase;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	font-size: 20px;
+	width: 150px;
+	height: 150px;
+	border: 2px solid;
+}
+.box{
+	font-size: 20px;
+	width: 150px;
+	height: 150px;
+	border: 2px solid;
+}
+@media (min-width: 100px) and /*and - это логическое высказывание - в данном случае говорится:
+правило работает в диапазоне от 100px до 300px*/
+ (max-width: 300px){
+	.box{
+		height: 500px;
+		background-color: green;
+	}
+}
+.box1{
+	font-size: 20px;
+	width: 250px;
+	height: 150px;
+	border: 2px solid;
+}
+@media (max-width: 200px), (min-width: 600px)/*Вместо элемента or. Работают оба логических высказывания*/{
+	.box1{
+		background-color: blue;
+		height: 500px;
+	}
+}
+.box2{
+	font-size: 20px;
+	width: 250px;
+	height: 150px;
+	border: 2px solid;
+}
+@media not (max-width: 200px) {
+	.box2{
+		background-color: green;
+	}
+}
+@media only (max-width: 200px){
+	.box3{
+		background-color: red;
+	}
+}
