@@ -102,7 +102,7 @@ header nav ul{
 }
 @media (max-width: 1499px){
 	.hi{
-		height: 576px;
+		height: 700px;
 		background: url(../img/boy.png) 90% bottom/ auto 90%  no-repeat, url(../img/bg.jpg) 0/100% 100% no-repeat;
 	}
 }
